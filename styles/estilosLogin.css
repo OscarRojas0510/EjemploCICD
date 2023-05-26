@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+#body {
+  position: relative;
+}
+#body #fondo1 {
+  height: 100vh;
+}
+#body #fondo2 {
+  background-color: #4c4c4c;
+  height: 100vh;
+}
+#body #overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#body #overlay .overlaycol {
+  box-shadow: 0px 0px 51px -11px rgba(255, 255, 255, 0.74);
+  -webkit-box-shadow: 0px 0px 51px -11px rgba(255, 255, 255, 0.74);
+  -moz-box-shadow: 0px 0px 51px -11px rgba(255, 255, 255, 0.74);
+  border: solid rgba(255, 255, 255, 0.54) 1px;
+  border-radius: 50px;
+}
+#olfondo1 {
+  background-color: rgba(0, 0, 0, 0);
+}
+#olfondo2 {
+  background-color: rgba(0, 0, 0, 0);
+}
+#imgLeon {
+  height: 100%;
+}
+#h2 {
+  color: white;
+  font-family: "Coda", cursive;
+  line-height: 2;
+  font-size: 50px;
+}
+@keyframes iconAnimIn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes iconAnimOut {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.imgPais:hover {
+  cursor: pointer;
+  animation-name: iconAnimIn;
+  animation-duration: calc(1s * 0.5);
+  animation-fill-mode: forwards;
+}
+.imgPais:not(:hover) {
+  cursor: pointer;
+  animation-name: iconAnimOut;
+  animation-duration: calc(1s * 0.5);
+  animation-fill-mode: forwards;
+}
+#p-1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Coda", cursive;
+}
+#validationmail {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  color: white;
+  font-family: "Coda", cursive;
+}
+#validationpwd {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  color: white;
+  font-family: "Coda", cursive;
+}
+.colorForm {
+  color: white;
+  font-family: "Coda", cursive;
+}
+#verpwdcontainer {
+  position: relative;
+}
+#verpwd:hover,
+#verpwd2:hover {
+  cursor: pointer;
+}
+#verpwd2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#verpw {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#passOlvidada {
+  font-family: "Coda", cursive;
+  font-size: large;
+  color: #00c2ff;
+}
+#errorCorreo,
+#errorPass {
+  font-family: "Coda", cursive;
+  color: red;
+  font-size: large;
+}
+.rowa2 {
+  border: solid blue 1px;
+}
